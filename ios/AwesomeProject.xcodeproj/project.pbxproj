@@ -15,11 +15,11 @@
 		6132EF182BDFF13200BBE14D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 6132EF172BDFF13200BBE14D /* PrivacyInfo.xcprivacy */; };
 		7699B88040F8A987B510C191 /* libPods-AwesomeProject-AwesomeProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-AwesomeProject-AwesomeProjectTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		B9D542A41A8E4F4B8D09E15D /* Fira Code Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD59F212FE34A85A0347399 /* Fira Code Bold.ttf */; };
-		6B4A352E32554296A1800C20 /* Fira Code Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8049F74FB5D4014944C8972 /* Fira Code Light.ttf */; };
-		1FDD4CD3B7974764955B491F /* Fira Code Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCD9E95D4D384EDFA4F8C793 /* Fira Code Medium.ttf */; };
-		774F497E270F4EAE9994DC5F /* Fira Code Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C385340D03364AF28E4FF641 /* Fira Code Regular.ttf */; };
-		D44EE68BB9B44CD189E4D65A /* Fira Code SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19F0586F108F425BA957630A /* Fira Code SemiBold.ttf */; };
+		6EB18A6DF5D34F0B94477B2F /* Fira Code Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B55A6DE442B54B858261B4E8 /* Fira Code Bold.ttf */; };
+		25A380245A32457F968B0130 /* Fira Code Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8408781C40194B35AD7A732F /* Fira Code Light.ttf */; };
+		72BE18BF223F454A93A5DE81 /* Fira Code Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 781F56329077450D808EBF4A /* Fira Code Medium.ttf */; };
+		46BAFF69DAA14C7985B4DF67 /* Fira Code Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BA57A9E46F84519B8FA42CA /* Fira Code Regular.ttf */; };
+		02672601605A48ECB5249C94 /* Fira Code SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BCC4070024A437C92A93220 /* Fira Code SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,11 +51,11 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AwesomeProject/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FAD59F212FE34A85A0347399 /* Fira Code Bold.ttf */ = {isa = PBXFileReference; name = "Fira Code Bold.ttf"; path = "../assets/fonts/Fira Code Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B8049F74FB5D4014944C8972 /* Fira Code Light.ttf */ = {isa = PBXFileReference; name = "Fira Code Light.ttf"; path = "../assets/fonts/Fira Code Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FCD9E95D4D384EDFA4F8C793 /* Fira Code Medium.ttf */ = {isa = PBXFileReference; name = "Fira Code Medium.ttf"; path = "../assets/fonts/Fira Code Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C385340D03364AF28E4FF641 /* Fira Code Regular.ttf */ = {isa = PBXFileReference; name = "Fira Code Regular.ttf"; path = "../assets/fonts/Fira Code Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		19F0586F108F425BA957630A /* Fira Code SemiBold.ttf */ = {isa = PBXFileReference; name = "Fira Code SemiBold.ttf"; path = "../assets/fonts/Fira Code SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B55A6DE442B54B858261B4E8 /* Fira Code Bold.ttf */ = {isa = PBXFileReference; name = "Fira Code Bold.ttf"; path = "../src/assets/fonts/Fira Code Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8408781C40194B35AD7A732F /* Fira Code Light.ttf */ = {isa = PBXFileReference; name = "Fira Code Light.ttf"; path = "../src/assets/fonts/Fira Code Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		781F56329077450D808EBF4A /* Fira Code Medium.ttf */ = {isa = PBXFileReference; name = "Fira Code Medium.ttf"; path = "../src/assets/fonts/Fira Code Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8BA57A9E46F84519B8FA42CA /* Fira Code Regular.ttf */ = {isa = PBXFileReference; name = "Fira Code Regular.ttf"; path = "../src/assets/fonts/Fira Code Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9BCC4070024A437C92A93220 /* Fira Code SemiBold.ttf */ = {isa = PBXFileReference; name = "Fira Code SemiBold.ttf"; path = "../src/assets/fonts/Fira Code SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,11 +165,11 @@
 		0AAEF876EE69481EB8F65196 /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				FAD59F212FE34A85A0347399 /* Fira Code Bold.ttf */,
-				B8049F74FB5D4014944C8972 /* Fira Code Light.ttf */,
-				FCD9E95D4D384EDFA4F8C793 /* Fira Code Medium.ttf */,
-				C385340D03364AF28E4FF641 /* Fira Code Regular.ttf */,
-				19F0586F108F425BA957630A /* Fira Code SemiBold.ttf */,
+				B55A6DE442B54B858261B4E8 /* Fira Code Bold.ttf */,
+				8408781C40194B35AD7A732F /* Fira Code Light.ttf */,
+				781F56329077450D808EBF4A /* Fira Code Medium.ttf */,
+				8BA57A9E46F84519B8FA42CA /* Fira Code Regular.ttf */,
+				9BCC4070024A437C92A93220 /* Fira Code SemiBold.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -272,11 +272,11 @@
 				6132EF182BDFF13200BBE14D /* PrivacyInfo.xcprivacy in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				B9D542A41A8E4F4B8D09E15D /* Fira Code Bold.ttf in Resources */,
-				6B4A352E32554296A1800C20 /* Fira Code Light.ttf in Resources */,
-				1FDD4CD3B7974764955B491F /* Fira Code Medium.ttf in Resources */,
-				774F497E270F4EAE9994DC5F /* Fira Code Regular.ttf in Resources */,
-				D44EE68BB9B44CD189E4D65A /* Fira Code SemiBold.ttf in Resources */,
+				6EB18A6DF5D34F0B94477B2F /* Fira Code Bold.ttf in Resources */,
+				25A380245A32457F968B0130 /* Fira Code Light.ttf in Resources */,
+				72BE18BF223F454A93A5DE81 /* Fira Code Medium.ttf in Resources */,
+				46BAFF69DAA14C7985B4DF67 /* Fira Code Regular.ttf in Resources */,
+				02672601605A48ECB5249C94 /* Fira Code SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

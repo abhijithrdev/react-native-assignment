@@ -20,6 +20,7 @@ import {
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {addTodoItem, getTodoItems} from './helper';
+import AppNavigator from './src/navigation/AppNavigator';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -34,43 +35,47 @@ function App(): React.JSX.Element {
   }, []);
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <View style={styles.sectionContainer}>
-          <Text style={styles.sectionTitle}>TODO</Text>
-        </View>
-        <View style={styles.sectionContainer}>
-          {todoItems.map((item: any) => (
-            <View key={item.id} style={styles.todoItem}>
-              <Text style={styles.sectionDescription}>{item.title}</Text>
-            </View>
-          ))}
-        </View>
-        <View style={styles.sectionContainer}>
-          <TextInput
-            style={styles.sectionDescription}
-            placeholder="Add your todo item"
-            onChange={e => setNewTodoItem(e.nativeEvent.text)}
-          />
-          <Button
-            title="Add"
-            onPress={() => {
-              addTodoItem(newTodoItem).then(() => {
-                getTodoItems(0, 10).then(items => {
-                  setTodoItems(items);
-                });
-              });
-            }}
-          />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    <View style={{flex:1}}>
+<AppNavigator/>
+    </View>
+    
+    // <SafeAreaView style={backgroundStyle}>
+    //   <StatusBar
+    //     barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+    //     backgroundColor={backgroundStyle.backgroundColor}
+    //   />
+    //   <ScrollView
+    //     contentInsetAdjustmentBehavior="automatic"
+    //     style={backgroundStyle}>
+    //     <View style={styles.sectionContainer}>
+    //       <Text style={styles.sectionTitle}>TODO</Text>
+    //     </View>
+    //     <View style={styles.sectionContainer}>
+    //       {todoItems.map((item: any) => (
+    //         <View key={item.id} style={styles.todoItem}>
+    //           <Text style={styles.sectionDescription}>{item.title}</Text>
+    //         </View>
+    //       ))}
+    //     </View>
+    //     <View style={styles.sectionContainer}>
+    //       <TextInput
+    //         style={styles.sectionDescription}
+    //         placeholder="Add your todo item"
+    //         onChange={e => setNewTodoItem(e.nativeEvent.text)}
+    //       />
+    //       <Button
+    //         title="Add"
+    //         onPress={() => {
+    //           addTodoItem(newTodoItem).then(() => {
+    //             getTodoItems(0, 10).then(items => {
+    //               setTodoItems(items);
+    //             });
+    //           });
+    //         }}
+    //       />
+    //     </View>
+    //   </ScrollView>
+    // </SafeAreaView>
   );
 }
 
