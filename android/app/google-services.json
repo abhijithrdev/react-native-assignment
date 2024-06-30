@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1044290260539",
+    "project_id": "toodoo-4472",
+    "storage_bucket": "toodoo-4472.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044290260539:android:93f87af019546d54b9961e",
+        "android_client_info": {
+          "package_name": "dev.scopex.abhijithrdev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsTpZX4vUcn7x4YboTJ_T1ZRsVBOq-77A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
