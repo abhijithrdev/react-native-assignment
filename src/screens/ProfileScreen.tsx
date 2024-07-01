@@ -12,7 +12,6 @@ const ProfileScreen = () => {
       const jsonValue = await AsyncStorage.getItem('@user_data');
       const userObj = jsonValue != null ? JSON.parse(jsonValue) : null;
       userObj !== undefined ? setUserData(userObj) : null;
-      console.log('user data set in useeffect');
     } catch (error) {
       console.error('Error retrieving user sign-in data:', error);
       return null;
@@ -23,33 +22,24 @@ const ProfileScreen = () => {
     getUserSignIn();
   }, []);
 
-  useEffect(() => {
-    console.log('isEnabled', isEnabled);
-  }, [isEnabled]);
-
   const toggleSwitch = () => {
     setIsEnabled(previousState => !previousState);
   };
 
   return (
     <View style={styles.container}>
-      <View
-        style={{
-          justifyContent: 'space-between',
-          alignItems: 'center',
-        }}>
-        <Image source={{uri: userData?.photoURL}} style={styles.image} resizeMode='contain'/>
+      <View style={styles.profileContainer}>
+        <Image
+          source={{uri: userData?.photoURL}}
+          style={styles.image}
+          resizeMode="contain"
+        />
         <Text style={styles.textName}>{userData?.displayName}</Text>
         <Text style={styles.text}>Email: {userData?.email}</Text>
         <Text style={styles.text}>Phone Number: {userData?.phoneNumber}</Text>
       </View>
 
-      <View
-        style={{
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-        }}>
+      <View style={styles.switchContainer}>
         <Text style={styles.darkModeText}>Dark mode</Text>
         <Switch
           trackColor={{false: '#767577', true: '#81b0ff'}}
@@ -57,7 +47,7 @@ const ProfileScreen = () => {
           ios_backgroundColor="#3e3e3e"
           onValueChange={toggleSwitch}
           value={isEnabled}
-          style={{ transform:[{ scaleX: 1.3 }, { scaleY: 1.3 }] }}
+          style={{transform: [{scaleX: 1.3}, {scaleY: 1.3}]}}
         />
       </View>
     </View>
@@ -72,7 +62,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 20,
     justifyContent: 'space-between',
-paddingVertical: '40%'
+    paddingVertical: '40%',
   },
   image: {
     width: 96,
@@ -96,6 +86,15 @@ paddingVertical: '40%'
     fontSize: 25,
     fontFamily: 'Fira Code Medium',
     color: 'black',
-    marginRight: '35%'
+    marginRight: '35%',
+  },
+  profileContainer: {
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  switchContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
 });
